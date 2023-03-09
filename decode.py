@@ -8,5 +8,5 @@ def decode(password):  # Function to decode password
     #print(password)
     return password
 
-print(decode("45678888"))
+#print(decode("45678888"))
 # print(encode("12345555"))
