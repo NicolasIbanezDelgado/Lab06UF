@@ -1,9 +1,9 @@
-def decode(password):
+def decode(password):  # Function to decode password
     my_str = ''
     for i in range(len(password)):
         curr_num = int(password[i])
         curr_num -= 3
-        my_str +=  (str(curr_num))
+        my_str += (str(curr_num))
     password = my_str
     #print(password)
     return password
