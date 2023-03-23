@@ -1,7 +1,7 @@
 #Nicolas Ibanez Delgado
 #This is my own encoder function that I made
 from decode import *
-loop = True 
+loop = True
 
 def encode(password):
     my_str = ''
@@ -32,9 +32,10 @@ while loop == True:
         print( "Your password has been encoded and stored!")
         #print(encode(password))
         continue
-    elif menu == 2: 
-        print(decode(encode(password)))
-        #print (f'The encoded password is {encode(password)}, and the original password is {password}.')
+    elif menu == 2:
+        #print(decode(encode(password)))
+        #Couldn't I juse hvae printed encode and then the initial password? Without decoding it? 
+        print (f'The encoded password is {encode(password)}, and the original password is {decode(encode(password)) }.')
         continue
     elif menu == 3:
         loop = False
