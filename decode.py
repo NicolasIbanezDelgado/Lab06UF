@@ -1,12 +1,15 @@
-def decode(password):  # Function to decode password
+def decode(password):
     my_str = ''
+    #empty strig
     for i in range(len(password)):
+        #for loop that iterates the string
         curr_num = int(password[i])
         curr_num -= 3
-        my_str += (str(curr_num))
+        if curr_num < 0:
+            #if statment to avoid negatives
+            curr_num += 10
+        my_str +=  (str(curr_num))
+        #concatenates the string
     password = my_str
-    #print(password)
+    #returns the password
     return password
-
-#print(decode("45678888"))
-# print(encode("12345555"))
