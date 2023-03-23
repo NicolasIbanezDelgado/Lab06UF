@@ -1,3 +1,6 @@
+#Nicolas Ibanez Delgado 
+#I decoded my own encode file
+
 def decode(password):
     my_str = ''
     #empty strig
